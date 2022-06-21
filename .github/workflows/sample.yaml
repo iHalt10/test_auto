@@ -2,6 +2,8 @@ name: learn-github-actions
 on: [push]
 jobs:
   one:
+    strategy:
+      fail-fast: false
     runs-on: macos-latest
     steps:
       - name: Dump GitHub context
