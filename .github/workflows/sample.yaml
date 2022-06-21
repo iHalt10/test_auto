@@ -2,7 +2,7 @@ name: learn-github-actions
 on: [push]
 jobs:
   one:
-    runs-on: macos-12
+    runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
         env:
