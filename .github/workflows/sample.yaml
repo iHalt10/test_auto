@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Run image
-        uses: abatilo/actions-poetry@v2.1.4
+        uses: abatilo/actions-poetry@v2.0.0
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: View poetry --help
