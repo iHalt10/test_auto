@@ -1,0 +1,10 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  one:
+    runs-on: macos-12
+    steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: echo "$GITHUB_CONTEXT"
